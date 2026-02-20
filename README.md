@@ -24,6 +24,12 @@ python -m http.server 8080
 # then open http://localhost:8080
 ```
 
+## Submission assets
+- **Live demo:** https://mergeguard-duo-flow.vercel.app
+- **Repository:** https://github.com/mgnlia/mergeguard-duo-flow
+- **Devpost submission packet:** [`docs/devpost-submission.md`](docs/devpost-submission.md)
+- **Demo video checklist:** [`docs/demo-video-checklist.md`](docs/demo-video-checklist.md)
+
 ## Rules-mapped feature checklist (GitLab AI Hackathon fit)
 - [x] **AI-powered workflow concept**: dual-agent MR analysis path
 - [x] **Developer productivity value**: reduces reviewer triage time with structured controls
