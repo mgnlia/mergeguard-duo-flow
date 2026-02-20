@@ -29,6 +29,8 @@ python -m http.server 8080
 - **Repository:** https://github.com/mgnlia/mergeguard-duo-flow
 - **Devpost submission packet:** [`docs/devpost-submission.md`](docs/devpost-submission.md)
 - **Demo video checklist:** [`docs/demo-video-checklist.md`](docs/demo-video-checklist.md)
+- **Adversary evidence:** [`docs/adversary-evidence.md`](docs/adversary-evidence.md)
+- **Closeout status / blockers:** [`docs/closeout-status.md`](docs/closeout-status.md)
 
 ## Rules-mapped feature checklist (GitLab AI Hackathon fit)
 - [x] **AI-powered workflow concept**: dual-agent MR analysis path
