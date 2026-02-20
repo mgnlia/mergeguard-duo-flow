@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MergeGuard Duo Flow — AI Merge Request Risk Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>MergeGuard Duo Flow</h1>
+      <p class="sub">Two-stage AI review simulation for GitLab merge requests</p>
+    </header>
+
+    <main class="container grid">
+      <section class="card">
+        <h2>1) Input MR context</h2>
+        <label for="title">Merge Request Title</label>
+        <input id="title" placeholder="e.g., Add OAuth callback validation" />
+
+        <label for="diff">Diff / change summary</label>
+        <textarea id="diff" rows="10" placeholder="Paste a simplified diff or describe changes..."></textarea>
+
+        <label for="criticality">Service Criticality</label>
+        <select id="criticality">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button id="analyze">Run Duo Flow</button>
+      </section>
+
+      <section class="card">
+        <h2>2) Stage outputs</h2>
+        <div class="stage">
+          <h3>Stage A — Fast Triage Agent</h3>
+          <pre id="triage">Waiting for input...</pre>
+        </div>
+        <div class="stage">
+          <h3>Stage B — Risk & Policy Agent</h3>
+          <pre id="risk">Waiting for Stage A...</pre>
+        </div>
+      </section>
+
+      <section class="card full">
+        <h2>3) Decision card</h2>
+        <div id="decision" class="decision neutral">No decision yet.</div>
+        <ul id="nextSteps"></ul>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <small>Demo-only MVP for GitLab AI Hackathon submission prep.</small>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
